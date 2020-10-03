@@ -44,6 +44,8 @@ img{
 
 .row{
     display: flex;
+    
+
 }
 
 
@@ -130,6 +132,12 @@ body section .row article h2{
 }
 
 @media(min-width: 48em){
-    body .container .row article{
-        
+    .container .row article{
+        width: 50%;
+    }
+
+
+    .container .row article:last-child{
+            width: 100%;
+        }
     

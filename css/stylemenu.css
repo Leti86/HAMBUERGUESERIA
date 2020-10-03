@@ -31,54 +31,39 @@ body{
 }
 
 img{
-    width: 40%;
+    width: 100%;
     height: auto;
     display: block;
-}
-
-.container h1{
-    color: black;    
-    font-size: 2em;
-    text-align: center;/* texto centrado */
-    font-family: var(--fuenteSecundaria);
-    font-weight: 700;
-    
-
-        
-}
-
-.container h1 span{
-    color: var(--color-principal);/* cambiar colo "services", tiene 2 colores */
-}
-
-body .container.underline{
-    position: relative;/* los elementos son los que se mueven y cogen posicion relativa */
-    width: 5em;
-    margin: 10px auto;/* alinear al centro */
-    color: var(--color-principal);
-    font-weight: 700;
-    margin-bottom: 2em;
-    text-align: center;
-    
-}
-
-body .container .underline hr{
-    position: absolute; /* es el contenedor, pero tapa la capa del anterior */
-    width: 100%;
-    top: -0.063em;
-    border-color: var(--color-principal);
-}
+} /* en las imagenes siempre sera estas medidas */
 
 .container{
     max-width: var(--anchoMaximo);
     margin: 0 auto;
-    padding: 2.125em 0.825em;
-    
-        
+    display: block;
+}
+
+
+
+
+/* row lo aplico a los elementos para hacrelo flotante */
+
+
+
+.container{
+    background-color: var(--color-secundario);
+    padding: 50px 100px;
+}
+
+.container h1{
+    font-weight: 700;
+    font-family:var(--fuenteSecundaria) ;
+    color: white;
+    text-align: center;
+    font-size: x-large;
 }
 
 .container h1 span{
-    color: var(--color-principal);/* cambiar colo "services", tiene 2 colores */
+    color: var(--color-principal);
 }
 
 body .container .underline{
@@ -98,47 +83,91 @@ body .container .underline{
     top: -0.063em;
     border-color: var(--color-principal);
 }
-    
-.container .container2 aside nav a{
-    display: block;
-    margin: 10px 0 ;
-}
 
-.container .container2{
-    display: flex;
-}
-
-.container .container2 h2{
-    
-    font-weight: 700;
-    
-
-}
-
-.container .container2 hr{
-    width: 25%;
-    margin-left: 0;
-    background-color: red;
-}
-
-.container .container2 aside{
-    margin: 0 40px;
-    display: block;
-    width: 40%;
-
-
+.container .container2 {
+  
+    color: white;
 }
 
 .container .container2 #menu{
     display: block;
-    margin-left: 0px;
-    
+}
 
+
+
+
+.container .container2 aside p{
+    font-size: small;
+}
+
+.container .container2 aside nav a{
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: white;
     
 }
-.container .container2 #menu article div img{
+
+
+.container .container2 aside nav a:hover{
+    background-color: red;
+    margin-bottom: 10px 10px;
+    
+}
+
+.container .container2 aside h2{
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.container .container2 aside hr{
+    border-color: var(--color-principal);
+    width: 50px;
     margin-left: 0px;
 }
+
+
+.container .container2 #menu{
+    
+    padding-left: 20px;
+}
+
+.container .container2 #menu .imagen{
+    margin: 20px 0;
+}
+.container .container2 #menu article {
+    margin-bottom: 20px;
+    
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--color-principal);
+    margin: 1em 0 0;
+    display: block; 
+    font-size: small;
+    font-weight: 700;
+}
+
+.container .container2 #menu article h2{
+    font-weight: 700;
+}
+.container .container2 #menu article h3{
+    font-size: small;
+    margin: 10px 0;
+}
+
+.container .container2 #menu article p{
+    color: var(--color-principal);
+    font-size: small;
+    font-weight: 700;
+}
+
+
+
+
+
+
 
 
 
