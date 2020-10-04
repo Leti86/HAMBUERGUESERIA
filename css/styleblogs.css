@@ -43,10 +43,17 @@ img{
 }/* creamos el container para encorsetar */
 
 .row{
-    display: flex;
+    display: flex;   
     
 
 }
+
+.container{
+    padding: 2.125em 0.825em;
+    
+}
+
+
 
 
 .container h1{
@@ -79,9 +86,12 @@ body .container .underline{
     border-color: var(--color-principal);
 }
 
+
 .container .row article{
     margin: 0 10px;
     position: relative;
+    
+    
 }
 
 
@@ -94,11 +104,15 @@ body .container .underline{
     border: 50%;
     top: 0;
     left: 0;
+    font-weight: 700;
+    
+    
     
 }
 
 body section .row article h2{
     font-family: var(--fuentePrincipal);
+    
     
 
 }
@@ -116,7 +130,7 @@ body section .row article h2{
 }
 
 .container .row p{
-    font-size: small;
+    font-size: x-small;
     margin: 1em 0;
     
     
@@ -133,11 +147,15 @@ body section .row article h2{
 
 @media(min-width: 48em){
     .container .row article{
-        width: 50%;
-    }
+        width: 50%;        
+        padding: 1.825em;
+        margin-bottom: 1em;
+    }/* poner 2 articulos en la misma fila */
 
 
-    .container .row article:last-child{
-            width: 100%;
+        main #ourservices article:last-child{
+            width: 100%;/* 1 articulo */
         }
-    
+
+}    
+

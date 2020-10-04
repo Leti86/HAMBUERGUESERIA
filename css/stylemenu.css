@@ -34,7 +34,7 @@ img{
     width: 100%;
     height: auto;
     display: block;
-} /* en las imagenes siempre sera estas medidas */
+} /
 
 .container{
     max-width: var(--anchoMaximo);
@@ -45,7 +45,7 @@ img{
 
 
 
-/* row lo aplico a los elementos para hacrelo flotante */
+
 
 
 
@@ -85,7 +85,7 @@ body .container .underline{
 }
 
 .container .container2 {
-  
+     
     color: white;
 }
 
@@ -95,7 +95,7 @@ body .container .underline{
 
 
 
-
+}
 .container .container2 aside p{
     font-size: small;
 }
@@ -128,8 +128,9 @@ body .container .underline{
 
 
 .container .container2 #menu{
-    
     padding-left: 20px;
+    
+
 }
 
 .container .container2 #menu .imagen{
@@ -137,6 +138,7 @@ body .container .underline{
 }
 .container .container2 #menu article {
     margin-bottom: 20px;
+    
     
 }
 
@@ -162,6 +164,36 @@ body .container .underline{
     font-size: small;
     font-weight: 700;
 }
+
+@media(min-width: 48em){
+    
+    .container .container2{
+        display: flex;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20px 80px;
+    }
+    .container .container2 #menu .row .imagen{
+        width: 20%;
+    }
+
+    .container .container2 #menu .row .ingredientes{
+        margin: 20px 20px;
+    }
+
+    .container .container2 aside{
+        padding:20px 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    
+}
+
+
 
 
 
