@@ -249,12 +249,12 @@ transition: 0.5s;
 
 /* inicio main section ourservices */
 
-main section{
+main .container{
     padding: 2.125em 0.825em;
     
 }
 
-main section h2{
+main .container h2{
     color: black;
     font-family: var(--fuenteSecundaria);
     font-size: 2em;
@@ -402,12 +402,15 @@ main #aboutus .columna:hover .marco, main #aboutus .columna:hover img{
 #blog {
     padding: 2.125em 0.825em;}
 
+
 }
 
-#blog .row{
+main #blog .row{
     flex-wrap: wrap;
 
 }
+
+
 
 #blog h1{
     color: black;    
@@ -514,6 +517,210 @@ main #aboutus .columna:hover .marco, main #aboutus .columna:hover img{
         }
 
 }    
+
+/* FIN inicio blogs */
+
+
+/*  INICIO MENU*/
+
+main #menudeldia{
+    background-color: var(--color-secundario);
+    padding: 50px 100px;
+       
+
+}
+
+main #menudeldia h1{
+    font-weight: 700;
+    font-family:var(--fuenteSecundaria) ;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-size: xx-large;
+    
+}
+
+main #menudeldia h1 span{
+    color: var(--color-principal);
+}
+
+main #menudeldia .underline span{
+    color: var(--color-principal);
+}
+
+main #menudeldia .underline{
+    position: relative;/* los elementos son los que se mueven y cogen posicion relativa */
+    width: 5em;
+    margin: 10px auto;/* alinear al centro */
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: 2em;
+    text-align: center;
+    
+}
+
+main #menudeldia .underline hr{
+    position: absolute; /* es el contenedor, pero tapa la capa del anterior */
+    width: 100%;
+    top: -0.063em;
+    border-color: var(--color-principal);
+}
+
+main #menudeldia .container2{     
+    color: white;
+       
+
+}
+
+main #menudeldia .container2 aside p{
+    font-size: small;
+}
+
+main #menudeldia .container2 aside nav{
+    margin-top: 40px;
+}
+
+
+
+main #menudeldia .container2 aside nav a{
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+
+main #menudeldia .container2 aside nav a:hover{
+    background-color: red;
+    margin-bottom: 10px 10px;   
+    
+}
+
+main #menudeldia .container2 h2{
+    font-weight: 700;
+    text-align: left;
+    color: white;
+    margin-top: 60px;
+    font-size: medium;
+}
+
+main #menudeldia .container2 hr{
+    border-color: var(--color-principal);
+    width: 50px;
+    margin-left: 0px;
+}
+
+
+main #menudeldia .container2 #carta{
+    padding-left: 20px;
+    flex-wrap: wrap;
+    
+
+}
+
+main #menudeldia .container2 #carta .imagen{
+    margin: 20px 0;
+}
+
+main #menudeldia .container2 #carta .enlace{
+    text-decoration: none;
+    color: var(--color-principal);
+    margin: 1em 0 0;
+    display: block; 
+    font-size: small;
+    font-weight: 700;
+}
+
+main #menudeldia .container2 #carta .ingredientes{
+    position: relative;
+}
+
+
+
+main #menudeldia .container2 #carta .ingredientes h3{
+    font-weight: 700;
+    font-size: small;
+}
+
+main #menudeldia .container2 #carta .ingredientes h4{
+    font-size: x-small;
+    margin: 10px 0;
+}
+
+main #menudeldia .container2 #carta .ingredientes p{
+    color: var(--color-principal);
+    font-size: small;
+    font-weight: 700;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+ @media(min-width: 48em){
+
+    main #menudeldia .container2 aside{
+        width: 40%;
+    }
+
+    main #menudeldia .container2 .row{
+        width: 60%;
+    }
+
+    
+    
+    /* main #menudeldia .container2{
+        display: flex;
+        
+    }
+    main #menudeldia .container2 .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+ */
+    /*#menu .container .container2 #carta .imagen{
+        max-width: 20%;
+    }
+
+
+    main #menudeldia .container2 #menu.row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20px 80px;
+    }
+
+       #menu .container .container2 #menu .row .ingredientes{
+        margin: 20px 20px;
+    }
+
+    #menu .container .container2 aside{
+        padding:20px 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main #aboutus .columna:first-child{
+        width: 40%;
+    }
+    main #aboutus .columna:last-child{
+        width: 60%;
+    } 
+
+
+    
+} */
+
+
+
+
+
+
+
+
+
+
 
 
 
