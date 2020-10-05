@@ -414,10 +414,11 @@ main #aboutus .columna:hover .marco, main #aboutus .columna:hover img{
     font-size: 2em;
     text-align: center;/* texto centrado */
     font-family: var(--fuenteSecundaria);
+    font-weight: 700;
         
 }
 
-#blog .container h1 span{
+#blog span{
     color: var(--color-principal);/* cambiar colo "services", tiene 2 colores */
 }
 
