@@ -39,12 +39,149 @@ img{
 .container{
     max-width: var(--anchoMaximo);
     margin: 0 auto;
-    padding: 2.125em 0.825em;
-}/* creamos el container para encorsetar */
+    }/* creamos el container para encorsetar */
+
+
+    /* row lo aplico a los elementos para hacrelo flotante */
 
 .row{
-    display: flex;   
+    display: flex; 
+    }
+
+/* header: todo lo que vemos al navegar en web */
+
+header .nav_top{
+    background-color: var(--color-secundario);
+    padding: 20px 10px;/* 20 arriba-abajo, 10 izq-drcha */
+}
+
+header .nav_top a{
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+header .nav_top a span{
+    display: none;
+}
+
+header .nav_top a i{
+    color: var(--color-principal);
+}
+
+header .nav_top .row{
+    justify-content: space-between;/* para que me separe los item del menu */
+}
+
+header nav{
+    padding: 20px 10px;/* darle un poco de aire a cada lado */
+}
+
+header .hamburguesa{
+    width: 50px;
+    cursor: pointer;/* sale la manica como si fuera un enlace */
+}
+
+header .hamburguesa div{
+    border-top: 2px solid var(--gris);/* hace que se ponga el menu de las rayitas */
+    margin: 10px;
+}
+
+header nav .row{
+    flex-wrap: wrap;/* nosotros decidimos el tamaño del elemento en el sistema flexible */
+    justify-content: space-between;/* se reparten los elementos en el espacio */
+}
+
+header nav ul{
+    width: 100%
+    ;
+}
+
+header nav .logo{
+    max-width: 110px;
+} /* la imagen como maximo tenga esa medida */
+
+header nav ul li a{
+    display: block;/* hacerlo bloque */
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--gris);
+    border-bottom: 1px solid
+    var(--gris);/* las lineas de debajo los item */
+}
+
+header nav ul li a:hover{
+    color: var(--color-principal);
+}/* marcado sobre el que pongo el raton */
+
+header nav ul li .activo{
+    color: var(--color-principal);
+}
+
+/* cambiamos tablet con las medias queries */
+@media(min-width: 48em){
+    header .nav_top a span{
+        display: inline;/* se vea el texto de arriba al lado de los iconos */
+    }  
     
+}
+
+/* pasamos a otra medida */
+@media(min-width: 62.75em){
+    header .hamburguesa{
+        display: none;/* hamburguesa desaparece */
+    }
+    header nav ul{
+        width: auto;
+    }
+
+    header nav ul li{
+        display: inline-block;
+    }
+
+    header nav ul li a{
+        padding: 5px 20px;
+        border-bottom: none;
+    }
+
+}
+/* fin del header */
+
+
+/* inicio foooter */
+
+footer{
+    background-color: var(--color-secundario);
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    position: fixed;/* es una posicion fija, no cambia aunque cambiemos el tamaño de la pagina */
+    width: 100%;
+    margin-top: 20px;
+    bottom: 0px;/* para dejarlo pegado abajo del todo  */
+
+}
+
+footer a{
+    color: white;
+}
+
+
+footer a:hover{
+    text-decoration: none
+} /* solo lo quitamos cuando nos posicionamos sobre el */
+
+@media(min-width: 48em){
+    footer{
+        text-align: left;
+    }  /* cuando pasamos de esta medida se alinea a la izq. */    
+}
+
+/* fin de footer */
+
+#blog .container{
+    padding: 2.125em 0.825em;}
 
 }
 

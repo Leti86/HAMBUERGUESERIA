@@ -391,3 +391,128 @@ main #aboutus .columna:hover .marco, main #aboutus .columna:hover img{
     } 
 }
 /* fin main section abaut us */
+
+
+
+
+/* inicio blogs */
+
+
+
+#blog {
+    padding: 2.125em 0.825em;}
+
+}
+
+#blog .row{
+    flex-wrap: wrap;
+
+}
+
+#blog h1{
+    color: black;    
+    font-size: 2em;
+    text-align: center;/* texto centrado */
+    font-family: var(--fuenteSecundaria);
+        
+}
+
+#blog .container h1 span{
+    color: var(--color-principal);/* cambiar colo "services", tiene 2 colores */
+}
+
+#blog .container .underline{
+    position: relative;/* los elementos son los que se mueven y cogen posicion relativa */
+    width: 5em;
+    margin: 10px auto;/* alinear al centro */
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: 2em;
+    text-align: center;
+    
+}
+
+#blog .container .underline hr{
+    position: absolute; /* es el contenedor, pero tapa la capa del anterior */
+    width: 100%;
+    top: -0.063em;
+    border-color: var(--color-principal);
+}
+
+
+#blog .row article{
+    margin: 0 1%;
+    position: relative;
+    
+    
+}
+
+
+#blog .row .fecha{
+    position: absolute;
+    background-color: rgb(161, 97, 97);
+    color: white;
+    width: 50px;
+    padding: 10px 10px;
+    border: 50%;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 0;   
+    
+    
+}
+
+#blog .row article h2{
+    font-family: var(--fuentePrincipal);
+    font-size: x-large;
+    
+    
+    
+
+}
+
+#blog .row h2{
+    font-weight: 700;/* ponerlo en negrita */
+    margin: 1em 0;
+}
+
+#blog .row h3{
+    font-weight: 700;
+    color: var(--color-principal);
+    font-size: small;
+
+}
+
+#blog .row p{
+    font-size: x-small;
+    margin: 1em 0;
+    
+    
+
+}
+
+#blog .row .enlace{
+    text-decoration: none;/* sin subrayado */
+    color: var(--color-principal);
+    display: block;
+    font-weight: 700;
+    font-size: small;
+}
+
+@media(min-width: 48em){
+    #blog .row article{
+        width: 48%;        
+        
+        
+    }/* poner 2 articulos en la misma fila */
+
+
+        #blog .row article:last-child{
+            width: 98%;/* 1 articulo */
+        }
+
+}    
+
+
+
