@@ -400,32 +400,33 @@ main #aboutus .columna:hover .marco, main #aboutus .columna:hover img{
 
 
 #blog {
-    padding: 2.125em 0.825em;}
-
-
+    padding: 2.125em 0.825em;
+    font-family: var(--fuenteSecundaria);
 }
+
+
+
 
 main #blog .row{
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
 
 }
-
-
 
 #blog h1{
     color: black;    
     font-size: 2em;
-    text-align: center;/* texto centrado */
-    font-family: var(--fuenteSecundaria);
+    text-align: center;/* texto centrado */    
     font-weight: 700;
-        
+    font-family: var(--fuentePrincipal);
+            
 }
 
 #blog span{
     color: var(--color-principal);/* cambiar colo "services", tiene 2 colores */
+    
 }
 
-#blog .container .underline{
+#blog .underline{
     position: relative;/* los elementos son los que se mueven y cogen posicion relativa */
     width: 5em;
     margin: 10px auto;/* alinear al centro */
@@ -436,7 +437,12 @@ main #blog .row{
     
 }
 
-#blog .container .underline hr{
+#blog .underline span{
+    font-weight: bold;
+    
+}
+
+#blog .underline hr{
     position: absolute; /* es el contenedor, pero tapa la capa del anterior */
     width: 100%;
     top: -0.063em;
@@ -447,7 +453,8 @@ main #blog .row{
 #blog .row article{
     margin: 0 1%;
     position: relative;
-    
+    width: 48%; 
+    font-family: var(--fuentePrincipal);  
     
 }
 
@@ -456,13 +463,16 @@ main #blog .row{
     position: absolute;
     background-color: rgb(161, 97, 97);
     color: white;
-    width: 50px;
-    padding: 10px 10px;
+    width: 50px;    
     border: 50%;
     top: 0;
     left: 0;
     font-weight: 700;
-    margin: 0;   
+    margin: 0; 
+    display: block; 
+    margin: 0 auto; 
+    text-align: center;
+    font-size: larger;
     
     
 }
@@ -470,26 +480,23 @@ main #blog .row{
 #blog .row article h2{
     font-family: var(--fuentePrincipal);
     font-size: x-large;
-    
-    
-    
-
-}
-
-#blog .row h2{
-    font-weight: 700;/* ponerlo en negrita */
+    text-align: left;
+    font-weight: 700;  
     margin: 1em 0;
+
 }
 
-#blog .row h3{
+
+
+#blog .row article h3{
     font-weight: 700;
     color: var(--color-principal);
-    font-size: small;
-
+    font-size: large;
+    
 }
 
-#blog .row p{
-    font-size: x-small;
+#blog .row article p{
+    font-size: medium;
     margin: 1em 0;
     
     
@@ -502,6 +509,7 @@ main #blog .row{
     display: block;
     font-weight: 700;
     font-size: small;
+    margin: 1em 0;
 }
 
 @media(min-width: 48em){
@@ -512,11 +520,19 @@ main #blog .row{
     }/* poner 2 articulos en la misma fila */
 
 
-        #blog .row article:last-child{
-            width: 98%;/* 1 articulo */
-        }
+    #blog .row article:last-child{
+        width: 98%;/* 1 articulo */
+    }
 
-}    
+}  
+
+/* pasamos a otra medida */
+@media(min-width: 62.75em){
+    #blog .row article, #blog .row article:last-child{
+        width: 31%;
+    }
+
+    
 
 /* FIN inicio blogs */
 
@@ -668,6 +684,7 @@ main #menudeldia .container2 #carta .ingredientes p{
     main #menudeldia .container2 .row{
         width: 60%;
     }
+}
 
     
     
