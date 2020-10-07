@@ -532,6 +532,7 @@ main #blog .row{
     #blog .row article, #blog .row article:last-child{
         width: 31%;
     }
+}
 
     
 
@@ -542,18 +543,19 @@ main #blog .row{
 
 main #menudeldia{
     background-color:var(--color-secundario);
-    padding: 50px 100px;
+    padding: 50px 80px;
 }
 
-main #menudeldia h1{
+main #menudeldia h2{
     font-weight: 700;
     font-family:var(--fuenteSecundaria) ;
     color: white;
     text-align: center;
     font-size: x-large;
+    
 }
 
-main #menudeldia h1 span{
+main #menudeldia h2 span{
     color: var(--color-principal);
 }
 
@@ -580,7 +582,7 @@ main #menudeldia .container2 {
     
 }
 
-}
+
 main #menudeldia .container2 aside p{
     font-size: small;
 }
@@ -602,7 +604,7 @@ main #menudeldia .container2 aside nav a:hover{
     
     
 }
-main #menudeldia .container2 aside h2{
+main #menudeldia .container2 aside h3{
     font-weight: 700;
     margin-top: 60px;
     color: white;
@@ -641,11 +643,11 @@ main #menudeldia .container2 #carta .ingredientes .enlace{
     font-weight: 700;
 }
 
-main #menudeldia .container2 #carta .ingredientes h3{
+main #menudeldia .container2 #carta .ingredientes h4{
     font-weight: 700;
 }
 
-main #menudeldia .container2 #carta .ingredientes h4{
+main #menudeldia .container2 #carta .ingredientes p{
     font-size: small;
     margin: 10px 0;
 }
@@ -653,7 +655,7 @@ main #menudeldia .container2 #carta .ingredientes h4{
 main #menudeldia .container2 #carta .ingredientes{
     position: relative;
 }
-main #menudeldia .container2 #carta .ingredientes p{
+main #menudeldia .container2 #carta .ingredientes .precio p{
     color: var(--color-principal);
     font-size: small;
     font-weight: 700;
@@ -671,15 +673,17 @@ main #menudeldia .container2 #carta .ingredientes p{
 
 main #menudeldia .container2 #carta .row{
     display: flex;
-    flex-wrap: wrap;
+    
     width: 20px 80px;
 }
 main #menudeldia .container2 #carta .row .imagen{
-    max-width: 30%;
+    width: 30%;
 }
 
 main #menudeldia .container2 #carta .row .ingredientes{
     margin: 20px 20px;
+    width: 70%;
+
 }
 
 main #menudeldia .container2 aside{
@@ -693,6 +697,7 @@ main #menudeldia .container2 aside{
 
 main #menudeldia .container2 aside{
     width: 30%;
+}
 }
 
 

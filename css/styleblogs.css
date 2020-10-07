@@ -181,8 +181,8 @@ footer a:hover{
 /* fin de footer */
 
 #blog .container{
-    padding: 2.125em 0.825em;}
-
+    padding: 2.125em 0.825em;
+    background-color: var(--color-secundario);
 }
 
 #blog .row{
